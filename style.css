@@ -1,0 +1,80 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+ height: 100%;
+ width: 100%;
+ color: white;
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #000000;
+    z-index: 999;
+    padding: 16vh 5.7vw;
+}
+
+.line{
+    display: flex;
+    justify-content: start;
+    overflow-y: hidden;
+    /* margin-bottom: ; */
+    height: fit-content;
+    gap: 2vw;
+    /* background-color: red */
+}
+
+.line #line1-part1{
+    gap: 1vw;    
+    margin-right:2vw ;
+    display: flex;
+    justify-content: center;
+    align-items: top;   
+    margin-left: 5vw;
+}
+#line1-part1 h3,#line1-part1 h2{
+    font-size:3vw;
+    font-family: silk serif;
+    font-weight: 500;
+}
+#line1-part1 h3{
+    width: 5.5vw;
+    text-align: right;
+    /* background-color: red; */
+}
+.line h1
+{   word-spacing: -.3vw;
+    font-weight: 500;
+    font-size: 7.25vw;
+    line-height: 7.3vw;
+    text-transform: uppercase;
+    font-family: Plain  ;
+}
+#bottomText{
+    /* background-color: red; */
+    position: absolute;
+    bottom: 20%;
+    left: 31%;
+    transform: translate(-50%,-50%);
+    width: 8vw;
+    height: fit-content;
+}
+#bottomText h4{
+    font-size: 1.07vw;
+    font-weight: 500;
+    /* background-color: red; */
+    font-family: plain light;
+}
+#main{
+    position: relative;
+    background-color:#030303 ;
+}
+#page1{
+    height: 100vh;
+    background-color: ;
+    width: 100%;
+}
