@@ -1,5 +1,6 @@
 var tl=  gsap.timeline()
-var count = 0
+function LoaderAnimation(){
+    var count = 0
 var b = 0
 var now = document.querySelector(".line span")
 var loader = document.querySelector("#loader")
@@ -39,12 +40,13 @@ function FontChanger() {
         {   
             now.style.webkitTextStroke = "2px white";
             now.style.fontFamily = "silk serif";
-            now.style.color = "black" 
+            now.style.color = "black" ;
+            now.style.fontWeight= "500"
         }
         else if(b%2 != 0 && b<=5)
         {   
             now.style.color = "white" 
-
+            now.style.fontWeight= "400"
             now.style.fontFamily = "plain light"; 
         }
         b++
@@ -63,3 +65,5 @@ tl.from("#page1",{
 tl.to("#loader",{
     display:none
 })
+}
+LoaderAnimation()
