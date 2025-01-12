@@ -38,16 +38,20 @@ function FontChanger() {
         b == 0
         if(b%2==0 && b<=5)
         {   
+            now.style.transition="opacity 0.5 ease-in-out"
             now.style.webkitTextStroke = "2px white";
             now.style.fontFamily = "silk serif";
             now.style.color = "black" ;
             now.style.fontWeight= "500"
+            
         }
         else if(b%2 != 0 && b<=5)
         {   
+            now.style.opacity= "1"
             now.style.color = "white" 
             now.style.fontWeight= "400"
             now.style.fontFamily = "plain light"; 
+            
         }
         b++
     },450)}
