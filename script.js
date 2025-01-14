@@ -1,5 +1,5 @@
-var tl=  gsap.timeline()
 function LoaderAnimation(){
+    var tl=  gsap.timeline()
     var count = 0
 var b = 0
 var now = document.querySelector(".line span")
@@ -56,14 +56,25 @@ function FontChanger() {
         b++
     },450)}
 FontChanger()
+tl.to("#bottomText",{
+    opacity:0,
+    delay:.2,
+    duration:.5,
+})
+tl.to(".line h1,h3,h2",{
+    opacity:0,
+    duration:.6,
+    stagger:-.3,
+})
 
 tl.to("#loader",{
-    delay: .5,
-    opacity:0
+    opacity:0,
+    delay:-.1
 })
 tl.from("#page1",{
     y:"150%",
     opacity:0,
+    delay:-.5
     // backgroundColor:"Red"
 })
 tl.to("#loader",{
