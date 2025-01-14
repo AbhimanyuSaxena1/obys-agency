@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obys Agency</title>
-    <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
-    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
+    
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="loader">
+   
+     <div id="loader">
         <div class="line" id="line1" >
             <div id="line1-part1">
                 <h3></h3>
@@ -28,18 +25,17 @@
         <div class="line">
             <h1>is loading right <span>now</span></h1>
         </div>
-        <div class="line">
-            <h1></h1>
-        </div>
         <div id="bottomText">
             <h4>Please wait <br>a few seconds</h4>
         </div>
-    </div> 
+</div> 
+<div id="cursor">
+</div>
     <div id="main">
         <div id="page1">
             <div id="nav">
                 <div id="nav1">
-                    <div id="logo">
+                
                         <div id="logo">
                             <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
                               <path d="M40.7622 24.5917C40.7622 23.6724 41.4511 22.9829 42.3697 22.9829C43.2883 22.9829 43.9773 23.6724 43.9773 24.5917C43.9773 25.511 43.2883 26.2005 42.3697 26.2005C41.566 26.2005 40.7622 25.3961 40.7622 24.5917Z" fill="currentColor"></path>
@@ -52,32 +48,29 @@
                               <path d="M34.6764 14.0195C34.6764 10.4572 31.691 7.58432 27.9019 7.35449C30.1983 7.69923 30.8873 11.4914 30.8873 14.0195C30.8873 16.5476 30.1983 20.2249 27.9019 20.6845C31.8058 20.4547 34.6764 17.5819 34.6764 14.0195Z" fill="currentColor"></path>
                               <path d="M14.9269 14.0195C14.9269 10.4572 11.9415 7.58432 8.15234 7.35449C10.4488 7.69923 11.1377 11.4914 11.1377 14.0195C11.1377 16.5476 10.4488 20.2249 8.15234 20.6845C11.9415 20.4547 14.9269 17.5819 14.9269 14.0195Z" fill="currentColor"></path>
                             <path d="M0 14.0195C0 10.4572 2.9854 7.58432 6.77456 7.35449C4.4781 7.69923 3.78916 11.4914 3.78916 14.0195C3.78916 16.5476 4.4781 20.2249 6.77456 20.6845C2.9854 20.4547 0 17.5819 0 14.0195Z" fill="currentColor"></path></svg></div>
-                    
-                    </div>
                 </div>
                 <div id="nav2">
-                    <h2>Works</h2>
-                    <h2>About</h2>
-                    <h2>Contacts</h2>
+                    <h4>Works</h4>
+                    <h4>About</h4>
+                    <h4>Contacts</h4>
                 </div>
             
             </div>
             <div id="one">
-                <div id="num">
-                    <h2>01</h2>
-                </div>
                 <div id="heading">
-                    <div class="line">
-                        <h2>we design</h2>
+                    <div class="hero" id="hero1">
+                        <h4>we design</h4>
                     </div>
-                    <div class="line">
-                        <h2>unique</h2>
+                    <div class="hero" id="hero2">
+                        <h4>unique</h4>
                     </div>
-                    <div class="line">
-                        <h2><span>web</span>/<span>graphic</span></h2>
+                    <div class="hero" id="hero3">
+                        <h2>web</h2>
+                        <h3>/</h3>
+                        <h2>graphic</h2>
                     </div>
-                    <div class="line">
-                        <h2>experience</h2>
+                    <div class="hero" id="hero4">
+                        <h4>experience</h4>
                     </div>
                 </div>
             </div>
@@ -87,6 +80,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script  type="text/javascript"  src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

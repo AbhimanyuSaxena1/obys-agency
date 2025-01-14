@@ -9,8 +9,20 @@ html,body{
  color: white;
  /* background-color: red; */
  /* overflow-x: hidden; */
+ cursor: hidden;
 }
-
+#cursor{
+    height: 2.8vw;
+    width: 2.8vw;
+    background: transparent;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    /* background-color: red; */
+    position: absolute;
+    mix-blend-mode: difference;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+}
 #loader{
     height: 100%;
     width: 100%;
@@ -98,7 +110,7 @@ html,body{
     transform: translate(-50%,-50%);
 }
 #nav #nav1{
-    background-color: red;
+    /* background-color: red; */
     width: 20%;
     height: 100%;
 }
@@ -106,61 +118,67 @@ html,body{
     /* background-color: red; */
     display: flex;
     gap: 2.5vw;
+    /* background-color: red; */
+    /* height: 100%; */
+    width: 20vw;
+    height: 5vw;
+    justify-content: end;
+    align-items: center;
 }
-#nav2 h2{
+#nav2>h4{
     font-family: plain;
     font-size: 1.01vw;
     font-weight: 300;
 }
-#one{
-    padding: 9vw 4vw 0vw 3vw;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    gap: 4vw;
+.hero{
     display: flex;
-    /* background-color: white; */
-    align-items: top;
-    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 999;
 }
-#num{
-    display: flex;
-    /* background-color: blue; */
-    width: fit-content;
-    /* height:50%; */
-    width: 5vw;
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%,-50%); */
-}
-#heading{
+.hero h4{
     /* background-color: red; */
-    width: fit-content;
-    /* position: absolute; */
-    /* top: 62.4%; */
-    /* left: 53.4%; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%,-50%); */
+    font-size: 7.4vw;
+    width: 60%;
+    word-spacing: -.5vw;
+    text-transform: uppercase;
+    line-height: 7.4vw;
+    font-weight: 500;
+    font-family: plain;
+    margin-left: 27.5%;
+    height: fit-content;
 }
-#page1 #heading .line h2{
+
+.hero:nth-child(1)
+{
+    margin-top: 10vw;
+}
+
+#hero3{
+    /* background-color: red; */
+margin-left: 27.5%;
+}
+.hero h2 {
+    font-weight: 500;
     font-family: plain;
     text-transform: uppercase;
-    font-size: 7.5vw;
-    line-height: 7.5vw;
-    font-weight: 500;
-    
-    letter-spacing: -.1vw;
+    font-size: 7.4vw;
+    line-height: 7.4vw;
+    text-decoration: underline;
 }
-#page1 #heading .line h2 span{
-    /* text-decoration: underline; */
-    text-underline-offset: .2rem;
-    text-decoration-line: underline;
-    text-decoration-thickness: auto ;
-}
-#page1 #one #num h2{
-    font-family: silk serif;
-    font-size: 3.2vw;
+
+
+
+.hero h3{
+    line-height: 7.3vw;
+    text-transform: uppercase;
+    font-size: 8vw;
+    font-family: plain;
     font-weight: 500;
+}
+.hero h2:hover{
+    -webkit-text-stroke: 1px white;
+    font-weight: 100;
+    color: transparent;
+    text-decoration: none;
 }
