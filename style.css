@@ -11,6 +11,14 @@ html,body{
  /* overflow-x: hidden; */
  cursor: hidden;
 }
+@font-face {
+    font-family: plain;
+    src: url(plain-regular-webfont.ttf);
+}
+@font-face {
+    font-family: silk;
+    src: url(silkserif-regularitalic-webfont.ttf);
+}
 #cursor{
     height: 2.8vw;
     width: 2.8vw;
