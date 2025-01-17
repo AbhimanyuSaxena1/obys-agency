@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obys Agency</title>
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
@@ -34,7 +35,7 @@
     </div>
 
     <div id="main">
-        <div id="page1">
+        <div id="page1" data-scroll>
             <div id="nav">
                 <div id="nav1">
 
@@ -99,17 +100,17 @@
                 </div>
             </div>
         </div>
-        <div id="page2">
-            <div id="vidContain">
+        <div id="page2" >
+            <div id="vidContain" data-scroll data-scroll-speed="-2.2">
                 <div id="vidCursor">
                     <i class="ri-play-fill"></i>
                 </div>
                 <img src="page2coverimage.jpg" alt="imageUnavailable">
-                <video autoplay muted loop src="https://obys.agency/wp-content/uploads/2024/12/Obys-Showreel-2024.mp4"
+                <video  muted loop src="https://obys.agency/wp-content/uploads/2024/12/Obys-Showreel-2024.mp4"
                     controls></video>
             </div>
         </div>
-        <div id="page3">
+        <div id="page3" >
             <div id="OurProjects"></div>
         </div>
         <div id="page4">
@@ -257,6 +258,7 @@
         </div>
     </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
