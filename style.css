@@ -124,6 +124,8 @@ html,body{
     /* background-color: red; */
     width: 20%;
     height: 100%;
+    /* background-color: red; */
+    background-color: transparent;
 }
 #nav #nav2{
     /* background-color: red; */
@@ -146,6 +148,17 @@ html,body{
     align-items: center;
     overflow: hidden;
     z-index: 999;
+}
+#hero h4{
+    position: relative;
+}
+#hero1 h4::before{
+    content: "01";
+    position: absolute;
+    font-size: 3.3vw;
+    font-family: silk;
+    top:-15%;
+    left: -15%;
 }
 .hero h4{
     /* background-color: red; */
@@ -206,7 +219,7 @@ margin-left: 27.5%;
     height: 100vh;
     background-color: #151515 ;
     /* padding: 4vw 0 4vw 4vw; */
-padding-top:8vw ;
+padding-top:6vw ;
     position: relative;
     /* display: flex; */
     /* justify-content: end; */
@@ -276,13 +289,15 @@ overflow-x: hidden;
     font-size: 7.3vw;
     text-transform: uppercase;
     font-family: plain;
-    /* position: relative; */
+    position: relative;
 }
-#aboutObys::before{
-    /* content: "03"; */
-    /* position: absolute; */
-    /* left: 10%; */
-    /* top: 0%; */
+#aboutObys h1::before{
+    content: "03";
+    position: absolute;
+    left: -13%;
+    top: 4%;
+    font-size: 3.3vw;
+    font-family: silk;
     /* transform: translate(-50%.-50%); */
 }
  .underline{
@@ -455,3 +470,73 @@ overflow-x: hidden;
     }
     
  }
+
+ #page6{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515; 
+ }
+ #footer{
+    width: 72vw;
+    margin-left: 28%;
+    padding: 2vw 6vw 0 0;
+ }
+ #footer-head h1{
+    font-size: 7.3vw;
+    font-family: plain ;
+    text-transform: uppercase;
+    /* font-style: italic; */
+    font-weight: 500;
+    position: relative;
+ }
+ #footer-head h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3.3vw;
+    font-family: silk;
+    top: 9%;
+    left: -15%;
+ }
+
+ #footer>.underline{
+    margin-bottom: 2.1vw;
+ }
+ #boxes{
+    width: 100%;
+    height: 50%;
+    padding: 4vw 4vw 3vw 0vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+ }
+ 
+ .box{
+    height: 100%;
+    width: 25%;
+    /* background-color: blue; */
+
+ }
+ .box h6{
+    margin-bottom: 2vw;
+    font-size: 1.05vw;
+    font-family: plain;
+    font-weight: 500;
+ }
+ .box h4{
+    font-family: plain light;
+    font-size: 1.7vw;
+    font-weight: 500;
+    line-height: 1.75vw;
+ }
+
+ #boxes> .box:nth-child(3) h4{
+    text-decoration: underline;
+    /* background-color: red; */
+ }
+ #footer>h3{
+    font-family: plain light;
+    font-size: 1vw;
+    font-weight: 500;
+    height: 10vh;
+}
