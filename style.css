@@ -7,9 +7,10 @@ html,body{
  height: 100%;
  width: 100%;
  color: white;
+ /* background-color: #151515; */
+
  /* background-color: red; */
  /* overflow-x: hidden; */
- cursor: hidden;
 }
 @font-face {
     font-family: plain;
@@ -29,7 +30,7 @@ html,body{
     position: absolute;
     mix-blend-mode: difference;
     z-index: 999;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%)
 }
 #loader{
     height: 100%;
@@ -38,8 +39,8 @@ html,body{
     background-color: #000000;
     z-index: 999;
     padding: 16vh 5.7vw;
+    overflow-y: hidden;
 }
-
 .line{
     display: flex;
     justify-content: start;
@@ -92,8 +93,10 @@ html,body{
     font-family: plain light;
 }
 #main{
-    position: relative;
+    /* position: relative; */
+    overflow-x: hidden;
     background-color:#030303 ;
+    
 }
 #page1{
     height: 100vh;
@@ -167,6 +170,7 @@ html,body{
 margin-left: 27.5%;
 }
 .hero h2 {
+    /* background-color: red; */
     font-weight: 500;
     font-family: plain;
     text-transform: uppercase;
@@ -188,13 +192,178 @@ margin-left: 27.5%;
     font-family: plain;
     font-weight: 500;
 }
-.hero h2:hover{
+#hero3 h2:hover{
     -webkit-text-stroke: .1vw white;
     font-weight: 400;
     color: transparent;
     border: none;
     border-bottom: .5vw solid rgba(255, 255, 255, 0.011);
-
-    /* transition: all ease 0.1; */
+    transition: all ease .3s;
     /* text-decoration: none; */
 }
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515 ;
+    /* padding: 4vw 0 4vw 4vw; */
+padding-top:8vw ;
+    position: relative;
+    /* display: flex; */
+    /* justify-content: end; */
+    /* align-items: center; */
+overflow-x: hidden;
+}
+#vidContain{
+    height: 70vh;
+    width: 72%;
+    left: 28%;
+    position: relative;
+    /* background: url("page2coverimage.jpg"); */
+    /* background-color: blue; */
+    /* overflow: hidden; */
+}
+#vidContain img{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0%;
+    z-index: 4;
+    /* object-fit: cover; */
+}
+#vidContain video{
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    object-fit: cover;
+}
+#vidCursor{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: #FFA63D;
+    position: absolute;
+    top: -15%;
+    right: 18%;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#vidCursor i{
+    font-size: 2.5vw;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FFA63D;
+}
+#page4{
+    width: 100%;
+    background-color: #151515;
+    
+}
+#aboutObys{
+    /* height: 100vh; */
+    width: 72vw;
+    margin-left: 28%;
+    background-color: #151515;
+    /* overflow-x: hidden; */
+    padding-top: 2vw;
+}
+#about h1{
+    font-weight: 500;
+    font-size: 7.3vw;
+    text-transform: uppercase;
+    font-family: plain;
+    /* position: relative; */
+}
+#aboutObys::before{
+    /* content: "03"; */
+    /* position: absolute; */
+    /* left: 10%; */
+    /* top: 0%; */
+    /* transform: translate(-50%.-50%); */
+}
+ .underline{
+    margin-top: 5vw;
+    margin-bottom: 3.5vw;
+    height: .5px;
+    width: 100%;
+    background-color: white;
+}
+#aboutObys>p{
+    width: 50%;
+    font-family: plain light;
+    font-weight: 500;
+    font-size: 2.25vw;
+}
+
+/* #page4 #about h1:before{
+    content: "03";
+    font-family: silk;
+    font-size: 3.3vw;
+    position: absolute;
+    top: 4.5%;
+    left: -14%;
+} */
+ #image{
+    display: flex;
+    margin-top: 5vh;
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    object-fit: cover;
+    gap: 2vw;
+ }
+ #image img{
+    height: 98%;
+    width: 50vw;
+ }
+ #para p{
+    width: 50%;
+    font-size: 1vw;
+    font-family: plain light;
+ }
+ #para p:nth-child(2){
+    margin-top: 2vw;
+ }
+ #blueDiv{
+    /* position: absolute; */
+    padding: 2vw 3.5vw 1vw 3.5vw;
+    right: 20%;
+    height: 85vh;
+    width: 45.3%;
+    background-color: #3F7DF4;
+    position: relative;
+    top: -32vh;
+    right: -32%;
+}
+.blueDiv-elem{
+     border-bottom: 1px solid white;
+     /* padding-left: 2vw; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 18%;
+    /* margin-bottom: 1vw; */
+    padding: 0vw 2vw 0vw 0vw;
+ }
+ .blueDiv-elem>h4{
+    font-size: 1.6vw;
+    font-family: plain light;
+    font-weight: 550;
+    padding-bottom: 1vw;
+ }
+ .blueDiv-elem>p{
+    text-align: start;
+    font-size: 1vw;
+    font-family: plain light;
+    font-weight: 500;
+ }
+ #aboutObys #underline2{
+    margin-top: -10vh;
+ }

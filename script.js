@@ -88,8 +88,11 @@ function FontChanger() {
         stagger: .1
     })
     tl.to("#loader",{
-        display: "none"
+        display: "none",
+        // backgroundColor:"grey",
+        
     })
+    
 }
 LoaderAnimation()
 function CursorAnimation(){
@@ -99,6 +102,7 @@ function CursorAnimation(){
                 left : detail.x,
                 top : detail.y,
                 // cursor : "none",
+
             })
         })
         Shery.makeMagnet("#nav2 h4" /* Element to target.*/, {
