@@ -365,5 +365,93 @@ overflow-x: hidden;
     font-weight: 500;
  }
  #aboutObys #underline2{
-    margin-top: -10vh;
+    margin-top: -20vh;
+    /* padding-bottom: -20vh; */
+ }
+ #aboutObys>h3{
+    font-family: plain light; 
+    position: relative;
+    /* top: -10%; */
+    margin-top: -1.9vw;
+    font-weight: 400;
+    font-size: 1vw;
+    height: 12vh;
+    /* margin-bottom: 10vw; */
+ }
+ #page5{
+    /* margin-top: -5vh; */
+    min-height: 100vh;
+    width: 100%;
+    /* padding: 1vw 0; */
+    background-color: #151515;
+    
+ }
+ #page5 .elem{
+    /* background-color: red; */
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: -3vw;
+    /* overflow-x: auto; */
+ }
+ .elem h1{
+    font-size: 7.5vw;
+    font-family: plain;
+    font-weight: 500;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    animation: animeLeft;
+    margin-right: 16px ;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ }
+ .elem span{
+    font-family: silk;
+ }
+
+ @keyframes animeLeft{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+    
+ }
+ 
+ #page5 .elem2{
+    /* background-color: red; */
+    width: 100%;
+    white-space: nowrap;
+    /* overflow-x: auto; */
+    margin-bottom: -3vw;
+
+ }
+ .elem2 h1{
+    font-size: 7.5vw;
+    font-family: plain;
+    font-weight: 500;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    animation: animeRight;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+ }
+ .elem2 span{
+    font-family: silk;
+ }
+ @keyframes animeRight{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(calc(0% - 20px));
+    }
+    
  }
