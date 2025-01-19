@@ -261,8 +261,9 @@ padding-top:6vw ;
     /* object-fit: cover; */
 }
 #vidContain video{
-    height: 98%;
-    width: 98%;
+    height: 100%;
+    padding: .1%;
+    width: 100%;
     z-index: 2;
     object-fit: cover;
     /* controls: none; */
