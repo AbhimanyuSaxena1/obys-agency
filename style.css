@@ -24,6 +24,10 @@ html,body{
     font-family: plain light;
     src: url("plain-light-webfont.ttf");
 }
+@font-face {
+    font-family: silk serif;
+    src: url("silkserif-lightitalic-webfont.ttf");
+}
 #cursor{
     height: 2.8vw;
     width: 2.8vw;
