@@ -204,7 +204,7 @@ vidContainer.addEventListener("click", function() {
       })
       gsap.to("#vidCursor",{
       scale :.5,
-      duration:1  
+      // duration:1  
       })
   
     push = 1 
@@ -218,7 +218,7 @@ vidContainer.addEventListener("click", function() {
       })
       gsap.to("#vidCursor",{
       scale :1,
-      duration:1
+      // duration:1
       })
     VidCursor.innerHTML = `<i class="ri-play-mini-fill"></i>`;
     push = 0;
