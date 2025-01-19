@@ -265,6 +265,7 @@ padding-top:6vw ;
     width: 98%;
     z-index: 2;
     object-fit: cover;
+    /* controls: none; */
 }
 #vidCursor{
     height: 10vw;

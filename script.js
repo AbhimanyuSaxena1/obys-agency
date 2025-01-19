@@ -191,26 +191,39 @@ vidContainer.addEventListener("mouseenter",function(event){
     top : (dets.y - vidContainer.offsetTop - 120) + 'px',
   }) 
 })
+})
 vidContainer.addEventListener("click", function() {
   if (push == 0) {
     video.play();
     VidCursor.innerHTML = `<i class="ri-pause-mini-line"></i>`;
-    image.style.opacity = 0;
-    VidCursor.style.scale = 0.5,
+
+    gsap.to("#vidContain img",{
+      
+      opacity :0,
+      duration: .5  
+      })
+      gsap.to("#vidCursor",{
+      scale :.5,
+      duration:1  
+      })
+  
     push = 1 
   }
  else 
   {
     video.pause();
-    image.style.opacity = 1;
-    VidCursor.style.scale = 1,
-
+    gsap.to("#vidContain img",{
+      opacity :1,
+      duration: .5  
+      })
+      gsap.to("#vidCursor",{
+      scale :1,
+      duration:1
+      })
     VidCursor.innerHTML = `<i class="ri-play-mini-fill"></i>`;
     push = 0;
   }
 });
-})
-
 vidContainer.addEventListener("mouseleave",function(){
 gsap.to("#vidCursor",{
   top:"-8%",
