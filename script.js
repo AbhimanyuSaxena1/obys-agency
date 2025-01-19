@@ -179,5 +179,5 @@ function goeyEffect() {
 }
 locomotiveScrollTrigger();
 LoaderAnimation();
-CursorAnimation();
+// CursorAnimation();
 goeyEffect();
