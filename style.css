@@ -158,7 +158,8 @@ html,body{
     display: flex;
     align-items: center;
     overflow: hidden;
-    z-index: 999;
+    z-index: 1000;
+    position: relative;
 }
 #hero h4{
     position: relative;
@@ -194,7 +195,9 @@ html,body{
 }
 
 #hero3{
+    width: fit-content;
     /* background-color: red; */
+    z-index: 1000;
 margin-left: 27.5%;
 }
 .hero h2 {
@@ -229,7 +232,15 @@ margin-left: 27.5%;
     transition: all ease .3s;
     /* text-decoration: none; */
 }
-
+#flag{
+    position: absolute;
+    height: 22vw;
+    z-index: 998;
+    transform: translate(-50%,-50%);
+    /* opacity: 1; */
+    top: 0;
+    left: 0;
+}
 #page2{
     width: 100%;
     height: 100vh;
@@ -248,23 +259,14 @@ padding-top:6vw ;
     width: 72%;
     left: 28%;
     position: relative;
-    /* background: url("page2coverimage.jpg"); */
+    background: url("page2coverimage.jpg");
+    background-size: cover;
     /* background-color: blue; */
-}
-#vidContain img{
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0%;
-    z-index: 4;
-    /* object-fit: cover; */
 }
 #vidContain video{
     height: 100%;
-    padding: .1%;
     width: 100%;
-    z-index: 2;
+    opacity: 0;
     object-fit: cover;
     /* controls: none; */
 }
@@ -274,6 +276,7 @@ padding-top:6vw ;
     border-radius: 50%;
     background-color: #FFA63D;
     position: absolute;
+    scale: 1;
     top: -8%;
     left: 72%;
     z-index: 998;
