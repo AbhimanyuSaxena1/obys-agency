@@ -125,23 +125,35 @@ function LoaderAnimation() {
     // backgroundColor:"grey",
   });
 }
-// function CursorAnimation() {
-//   document.addEventListener("mousemove", function (detail) {
-//     gsap.to("#cursor", {
-//       left: detail.x - 1,
-//       top: detail.y - 1,
-//       // cursor : "none",
-//     });
-//   });
-// }
+function CursorAnimation() {
+  const mainElement = document.querySelector("#main");
+  const cursorElement = document.querySelector("#cursor");
+    mainElement.addEventListener("mouseenter",function(){
+      mainElement.style.cursor = "none";
+    })
+
+  mainElement.addEventListener("mousemove", function (detail) {
+    gsap.to("#cursor", {
+      x: detail.x,
+      y: detail.y,
+      // duration:"1s",
+      // delay: "none",
+      delay: -.5,
+      
+    });
+  });
+}
 Shery.makeMagnet("#nav2 h4" /* Element to target.*/, {
   //Parameters are optional.
-  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  // ease: "cubic-bezier(0.1, 1, 0.320, 1)",
   duration: 1,
 });
 function goeyEffect() {
+  
+
   Shery.imageEffect(".image-div", {
     style: 5,
+    
     // debug:true,
     config: {
       a: { value: 0.69, range: [0, 30] },
@@ -176,70 +188,20 @@ function goeyEffect() {
     },
     gooey: true,
   });
+   
 }
-// function VidCursor(){
-//   var push = 0
-//  var vidContainer = document.querySelector("#vidContain");
-//  var VidCursor = document.querySelector("#vidCursor");
-//  var video = document.querySelector("#vidContain video")
-//  var image = document.querySelector("#vidContain img")
-// vidContainer.addEventListener("mouseenter",function(event){
-// vidContainer.addEventListener("mousemove", function(dets){
-//   gsap.to("#vidCursor",{
-//     left : (dets.x - vidContainer.offsetLeft - 70) + 'px',
-//     top : (dets.y - vidContainer.offsetTop - 120) + 'px',
-//   }) 
-// })
-// })
-// vidContainer.addEventListener("click", function() {
-//   if (push == 0) {
-//     video.play();
-//     VidCursor.innerHTML = `<i class="ri-pause-mini-line"></i>`;
 
-//     gsap.to("#vidContain img",{
-      
-//       opacity :0,
-//       duration: .5  
-//       })
-//       gsap.to("#vidCursor",{
-//       scale :.5,
-//       // duration:1  
-//       })
-  
-//     push = 1 
-//   }
-//  else 
-//   {
-//     video.pause();
-//     gsap.to("#vidContain img",{
-//       opacity :1,
-//       duration: .5  
-//       })
-//       gsap.to("#vidCursor",{
-//       scale :1,
-//       // duration:1
-//       })
-//     VidCursor.innerHTML = `<i class="ri-play-mini-fill"></i>`;
-//     push = 0;
-//   }
-// });
-// vidContainer.addEventListener("mouseleave",function(){
-// gsap.to("#vidCursor",{
-//   top:"-8%",
-//   left:"72%",
-//   // cursor: "visible"
-// })
-
-// })
-
-// }
 var push = 0;
 function VidCursor(){
   var vidcontainer = document.querySelector("#vidContain");
   var vidCursor = document.querySelector("#vidCursor");
   var video = document.querySelector("#vidContain video")
   vidcontainer.addEventListener("mouseenter",function(){
-  vidcontainer.addEventListener("mousemove", function(dets){
+  gsap.to("#cursor",{
+    // opacity:0,
+    scale:0
+  })
+    vidcontainer.addEventListener("mousemove", function(dets){
     gsap.to("#vidCursor",{
       left : dets.x - 450,
       top: dets.y - 200,
@@ -247,6 +209,10 @@ function VidCursor(){
   })
 })
 vidcontainer.addEventListener("mouseleave",function(){
+  gsap.to("#cursor",{
+    // opacity:1,
+    scale:1
+  })
   gsap.to("#vidCursor",{
     left: "72%",
     top:"-8%"
@@ -276,7 +242,7 @@ vidcontainer.addEventListener("click",function(){
 })
 }
 function flag(){
-  document.addEventListener("mousemove",function(dets){
+  document.querySelector("#one").addEventListener("mousemove",function(dets){
     gsap.to("#flag",{
       x : dets.x,
       y : dets.y
@@ -294,12 +260,59 @@ function flag(){
     })
   })
 }
-locomotiveScrollTrigger();
+function footerAnimation() {
+
+  var clutter = ""
+  var clutter2 = ""
+  document.querySelector("#footer-head h1").textContent.split("").forEach(function (elem) {
+    clutter += `<span>${elem}</span>`
+  })
+  document.querySelector("#footer-head h1").innerHTML = clutter
+  document.querySelector("#footer h2").textContent.split("").forEach(function (elem) {
+    clutter2 += `<span>${elem}</span>`
+  })
+  document.querySelector("#footer h2").innerHTML = clutter2
+
+
+  document.querySelector("#footer-head").addEventListener("mouseenter", function () {
+    gsap.to("#footer-head h1 span", {
+      opacity: 0,
+      stagger: 0.01
+    })
+    gsap.to("#footer-head h2 span", {
+      delay: 0.35,
+      opacity: 1,
+      stagger: 0.02
+    })
+    gsap.to(".footer-arrow",{
+      marginLeft:"8vw",
+      delay:.5
+    })
+  })
+  document.querySelector("#footer-head").addEventListener("mouseleave", function () {
+    gsap.to("#footer-head h1 span", {
+      opacity: 1,
+      stagger: 0.02,
+      delay: 0.2,
+
+    })
+    gsap.to("#footer h2 span", {
+      opacity: 0,
+      stagger: 0.01
+    })
+    gsap.to(".footer-arrow",{
+      marginLeft:"4vw",
+      delay:.5
+    })
+  })
+}
+
+CursorAnimation();
 LoaderAnimation();
-// CursorAnimation();
+locomotiveScrollTrigger();
 VidCursor();
-
 goeyEffect();
-
-
 flag()
+footerAnimation();
+
+
