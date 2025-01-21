@@ -14,19 +14,19 @@ html,body{
 }
 @font-face {
     font-family: plain;
-    src: url(plain-regular-webfont.ttf);
+    src: url("fonts/plain-regular-webfont.ttf");
 }
 @font-face {
     font-family: silk;
-    src: url(silkserif-regularitalic-webfont.ttf);
+    src: url("fonts/silkserif-regularitalic-webfont.ttf");
 }
 @font-face {
     font-family: plain light;
-    src: url("plain-light-webfont.ttf");
+    src: url("fonts/plain-light-webfont.ttf");
 }
 @font-face {
     font-family: silk serif;
-    src: url("silkserif-lightitalic-webfont.ttf");
+    src: url("fonts/ilkserif-lightitalic-webfont.ttf");
 }
 #cursor{
     height: 2.8vw;
@@ -259,7 +259,7 @@ padding-top:6vw ;
     width: 72%;
     left: 28%;
     position: relative;
-    background: url("page2coverimage.jpg");
+    background: url("assets/page2coverimage.jpg");
     background-size: cover;
     /* background-color: blue; */
 }
