@@ -113,6 +113,7 @@ body{
     overflow-x: hidden;
     background-color:#030303 ;
     /* background-color: #151515 ; */
+    /* position: relative; */
 
     
 }
@@ -132,9 +133,12 @@ body{
     width: 100vw;
     padding: 4vw 5vw 2vw 5vw;
     /* background-color: rebeccapurple; */
-    position: relative;
+
 }
 #nav #nav1{
+    /* position: fixed;
+    z-index: 999999;
+    top: 0; */
     /* background-color: red; */
     width: 20%;
     height: 100%;
@@ -145,13 +149,15 @@ body{
 .menu-opener__square{
     position: absolute;
     top: 69%;
-    left: 5.5%;
+    left: 5%;
+    /* margin-right: 10vw; */
     transform: translate(-50%,-50%);
 }
+
 .brand__svg{
     position: absolute;
     top: 69%;
-    left: 10.8%;
+    left: 33%;
     transform: translate(-50%,-50%);
 }
 #nav #nav2{
@@ -201,6 +207,7 @@ body{
     height: fit-content;
 }
 #one{
+    padding-top: 3vw;
     margin-bottom: 10vh;
     width: 100%;
     /* background-color: red; */
