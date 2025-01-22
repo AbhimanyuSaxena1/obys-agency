@@ -646,7 +646,7 @@ mm.add("(max-width:601px)",function(){
 locomotiveScrollTrigger()
   VidCursor();
   // navAnime();
-  // goeyEffect();
+  goeyEffect();
   flag()
   footerAnimation();
 });
